@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#4f46e5">
+  <title>理社一問一答・実践テスト＆定期試験予想問題集</title>
+<style>
+:root{--font:"Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP","Noto Sans JP",system-ui,sans-serif}
+*,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}
+html{-webkit-text-size-adjust:100%;line-height:1.5;font-family:var(--font);tab-size:4;-webkit-tap-highlight-color:transparent}
+body{margin:0;line-height:inherit;padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+h1,h2,h3,p{margin:0;font-size:inherit;font-weight:inherit}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;color:inherit;line-height:inherit}
+button{background:transparent;padding:0;cursor:pointer;-webkit-appearance:button}
+button:disabled{cursor:default}
+img,svg,canvas{display:block;vertical-align:middle;max-width:100%}
+input::placeholder{color:#9ca3af;opacity:1}
+[hidden]{display:none}
+.no-scrollbar{scrollbar-width:none}.no-scrollbar::-webkit-scrollbar{display:none}
+input[type=text]{font-size:16px}
+@media (pointer:coarse){button{min-height:40px}.tab-btn,#quizOptionsContainer button{min-height:44px}}
+canvas{touch-action:none}
+.bg-amber-100{background-color:#fef3c7}
+.bg-amber-50{background-color:#fffbeb}
+.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}
+.bg-emerald-100{background-color:#d1fae5}
+.bg-emerald-50{background-color:#ecfdf5}
+.bg-emerald-600{background-color:#059669}
+.bg-indigo-100{background-color:#e0e7ff}
+.bg-indigo-50{background-color:#eef2ff}
+.bg-indigo-600{background-color:#4f46e5}
+.bg-indigo-700\/60{background-color:rgb(67 56 202 / 0.6)}
+.bg-rose-100{background-color:#ffe4e6}
+.bg-rose-50{background-color:#fff1f2}
+.bg-rose-500{background-color:#f43f5e}
+.bg-rose-600{background-color:#e11d48}
+.bg-slate-100{background-color:#f1f5f9}
+.bg-slate-200{background-color:#e2e8f0}
+.bg-slate-50{background-color:#f8fafc}
+.bg-white{background-color:#ffffff}
+.block{display:block}
+.border{border-width:1px}
+.border-2{border-width:2px}
+.border-amber-400{border-color:#fbbf24}
+.border-b{border-bottom-width:1px}
+.border-dashed{border-style:dashed}
+.border-emerald-300{border-color:#6ee7b7}
+.border-emerald-400{border-color:#34d399}
+.border-emerald-500{border-color:#10b981}
+.border-indigo-100{border-color:#e0e7ff}
+.border-indigo-200{border-color:#c7d2fe}
+.border-indigo-500{border-color:#6366f1}
+.border-l-4{border-left-width:4px}
+.border-rose-200{border-color:#fecdd3}
+.border-rose-300{border-color:#fda4af}
+.border-rose-400{border-color:#fb7185}
+.border-rose-500{border-color:#f43f5e}
+.border-slate-100{border-color:#f1f5f9}
+.border-slate-200{border-color:#e2e8f0}
+.border-slate-300{border-color:#cbd5e1}
+.border-t{border-top-width:1px}
+.bottom-3{bottom:0.75rem}
+.cursor-crosshair{cursor:crosshair}
+.cursor-pointer{cursor:pointer}
+.duration-200{transition-duration:200ms}
+.duration-300{transition-duration:300ms}
+.fixed{position:fixed}
+.flex{display:flex}
+.flex-1{flex:1 1 0%}
+.flex-col{flex-direction:column}
+.flex-grow{flex-grow:1}
+.flex-wrap{flex-wrap:wrap}
+.font-bold{font-weight:700}
+.font-extrabold{font-weight:800}
+.font-sans{font-family:var(--font)}
+.gap-1{gap:0.25rem}
+.gap-2{gap:0.5rem}
+.gap-3{gap:0.75rem}
+.gap-4{gap:1rem}
+.grid{display:grid}
+.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.h-16{height:4rem}
+.h-2{height:0.5rem}
+.h-6{height:1.5rem}
+.h-64{height:16rem}
+.h-full{height:100%}
+.hidden{display:none}
+.inline-block{display:inline-block}
+.inline-flex{display:inline-flex}
+.inset-0{inset:0}
+.items-center{align-items:center}
+.justify-between{justify-content:space-between}
+.justify-center{justify-content:center}
+.justify-end{justify-content:flex-end}
+.leading-6{line-height:1.5rem}
+.leading-relaxed{line-height:1.625}
+.max-h-28{max-height:7rem}
+.max-w-6xl{max-width:72rem}
+.max-w-lg{max-width:32rem}
+.max-w-md{max-width:28rem}
+.mb-1{margin-bottom:0.25rem}
+.mb-2{margin-bottom:0.5rem}
+.mb-3{margin-bottom:0.75rem}
+.mb-4{margin-bottom:1rem}
+.mb-5{margin-bottom:1.25rem}
+.mb-6{margin-bottom:1.5rem}
+.min-h-screen{min-height:100vh}
+.ml-1{margin-left:0.25rem}
+.mr-1{margin-right:0.25rem}
+.mr-2{margin-right:0.5rem}
+.mt-1{margin-top:0.25rem}
+.mt-2{margin-top:0.5rem}
+.mt-3{margin-top:0.75rem}
+.mt-4{margin-top:1rem}
+.mt-6{margin-top:1.5rem}
+.mx-auto{margin-left:auto;margin-right:auto}
+.overflow-hidden{overflow:hidden}
+.overflow-x-auto{overflow-x:auto}
+.p-1{padding:0.25rem}
+.p-2{padding:0.5rem}
+.p-3{padding:0.75rem}
+.p-4{padding:1rem}
+.p-5{padding:1.25rem}
+.p-6{padding:1.5rem}
+.p-8{padding:2rem}
+.pb-3{padding-bottom:0.75rem}
+.pl-2{padding-left:0.5rem}
+.pl-3{padding-left:0.75rem}
+.pt-3{padding-top:0.75rem}
+.pt-4{padding-top:1rem}
+.px-2{padding-left:0.5rem;padding-right:0.5rem}
+.px-3{padding-left:0.75rem;padding-right:0.75rem}
+.px-4{padding-left:1rem;padding-right:1rem}
+.px-5{padding-left:1.25rem;padding-right:1.25rem}
+.px-6{padding-left:1.5rem;padding-right:1.5rem}
+.px-8{padding-left:2rem;padding-right:2rem}
+.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}
+.py-1{padding-top:0.25rem;padding-bottom:0.25rem}
+.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}
+.py-12{padding-top:3rem;padding-bottom:3rem}
+.py-2{padding-top:0.5rem;padding-bottom:0.5rem}
+.py-3{padding-top:0.75rem;padding-bottom:0.75rem}
+.py-8{padding-top:2rem;padding-bottom:2rem}
+.right-3{right:0.75rem}
+.rounded-2xl{border-radius:1rem}
+.rounded-full{border-radius:9999px}
+.rounded-lg{border-radius:.5rem}
+.rounded-r-lg{border-top-right-radius:.5rem;border-bottom-right-radius:.5rem}
+.rounded-xl{border-radius:.75rem}
+.select-none{user-select:none;-webkit-user-select:none}
+.shadow{box-shadow:0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1)}
+.shadow-2xl{box-shadow:0 25px 50px -12px rgb(0 0 0 / .25)}
+.shadow-inner{box-shadow:inset 0 2px 4px 0 rgb(0 0 0 / .05)}
+.shadow-lg{box-shadow:0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1)}
+.shadow-md{box-shadow:0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1)}
+.shadow-sm{box-shadow:0 1px 2px 0 rgb(0 0 0 / .05)}
+.space-x-1 > :not([hidden]) ~ :not([hidden]){margin-left:0.25rem}
+.space-x-1\.5 > :not([hidden]) ~ :not([hidden]){margin-left:0.375rem}
+.space-x-2 > :not([hidden]) ~ :not([hidden]){margin-left:0.5rem}
+.space-x-3 > :not([hidden]) ~ :not([hidden]){margin-left:0.75rem}
+.space-x-4 > :not([hidden]) ~ :not([hidden]){margin-left:1rem}
+.space-y-2 > :not([hidden]) ~ :not([hidden]){margin-top:0.5rem}
+.space-y-3 > :not([hidden]) ~ :not([hidden]){margin-top:0.75rem}
+.space-y-4 > :not([hidden]) ~ :not([hidden]){margin-top:1rem}
+.space-y-6 > :not([hidden]) ~ :not([hidden]){margin-top:1.5rem}
+.sticky{position:sticky}
+.text-2xl{font-size:1.5rem;line-height:2rem}
+.text-4xl{font-size:2.25rem;line-height:2.5rem}
+.text-amber-400{color:#fbbf24}
+.text-amber-500{color:#f59e0b}
+.text-amber-600{color:#d97706}
+.text-amber-800{color:#92400e}
+.text-base{font-size:1rem;line-height:1.5rem}
+.text-center{text-align:center}
+.text-emerald-600{color:#059669}
+.text-emerald-700{color:#047857}
+.text-indigo-200{color:#c7d2fe}
+.text-indigo-600{color:#4f46e5}
+.text-indigo-700{color:#4338ca}
+.text-left{text-align:left}
+.text-lg{font-size:1.125rem;line-height:1.75rem}
+.text-purple-600{color:#9333ea}
+.text-rose-600{color:#e11d48}
+.text-slate-400{color:#94a3b8}
+.text-slate-500{color:#64748b}
+.text-slate-600{color:#475569}
+.text-slate-700{color:#334155}
+.text-slate-800{color:#1e293b}
+.text-sm{font-size:.875rem;line-height:1.25rem}
+.text-white{color:#ffffff}
+.text-xl{font-size:1.25rem;line-height:1.75rem}
+.text-xs{font-size:.75rem;line-height:1rem}
+.text-yellow-300{color:#fde047}
+.top-0{top:0}
+.tracking-wide{letter-spacing:.025em}
+.transition{transition-property:color,background-color,border-color,box-shadow,transform;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}
+.transition-all{transition-property:all;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}
+.transition-colors{transition-property:color,background-color,border-color;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}
+.w-0{width:0}
+.w-16{width:4rem}
+.w-6{width:1.5rem}
+.w-full{width:100%}
+.whitespace-nowrap{white-space:nowrap}
+.z-40{z-index:40}
+.z-50{z-index:50}
+.hover\:bg-indigo-100:hover{background-color:#e0e7ff}
+.hover\:bg-indigo-50:hover{background-color:#eef2ff}
+.hover\:bg-indigo-700:hover{background-color:#4338ca}
+.hover\:bg-rose-600:hover{background-color:#e11d48}
+.hover\:bg-slate-100:hover{background-color:#f1f5f9}
+.hover\:bg-slate-200:hover{background-color:#e2e8f0}
+.hover\:text-rose-500:hover{color:#f43f5e}
+.hover\:text-slate-600:hover{color:#475569}
+.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}
+.focus\:ring-2:focus{box-shadow:0 0 0 2px var(--tw-ring-color,#3b82f6)}
+.focus\:ring-indigo-500:focus{--tw-ring-color:#6366f1}
+@media (min-width:640px){
+.sm\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.sm\:mt-0{margin-top:0}
+.sm\:p-6{padding:1.5rem}
+.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}
+}
+.dark .dark\:bg-emerald-900\/20{background-color:rgb(6 78 59 / 0.2)}
+.dark .dark\:bg-emerald-900\/40{background-color:rgb(6 78 59 / 0.4)}
+.dark .dark\:bg-indigo-800{background-color:#3730a3}
+.dark .dark\:bg-indigo-900{background-color:#312e81}
+.dark .dark\:bg-indigo-900\/40{background-color:rgb(49 46 129 / 0.4)}
+.dark .dark\:bg-rose-900\/10{background-color:rgb(136 19 55 / 0.1)}
+.dark .dark\:bg-rose-900\/20{background-color:rgb(136 19 55 / 0.2)}
+.dark .dark\:bg-rose-900\/40{background-color:rgb(136 19 55 / 0.4)}
+.dark .dark\:bg-slate-700{background-color:#334155}
+.dark .dark\:bg-slate-800{background-color:#1e293b}
+.dark .dark\:bg-slate-900{background-color:#0f172a}
+.dark .dark\:border-rose-900{border-color:#881337}
+.dark .dark\:border-slate-600{border-color:#475569}
+.dark .dark\:border-slate-700{border-color:#334155}
+.dark .dark\:text-emerald-400{color:#34d399}
+.dark .dark\:text-indigo-300{color:#a5b4fc}
+.dark .dark\:text-indigo-400{color:#818cf8}
+.dark .dark\:text-slate-100{color:#f1f5f9}
+.dark .dark\:text-slate-200{color:#e2e8f0}
+.dark .dark\:text-slate-300{color:#cbd5e1}
+.dark .dark\:text-slate-400{color:#94a3b8}
+.dark .dark\:text-white{color:#ffffff}
+.dark .dark\:hover\:bg-slate-600:hover{background-color:#475569}
+.dark .dark\:hover\:bg-slate-700:hover{background-color:#334155}
+.dark .dark\:hover\:bg-slate-800:hover{background-color:#1e293b}
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 font-sans min-h-screen flex flex-col transition-colors duration-200">
+
+  <!-- Header -->
+  <header class="bg-indigo-600 dark:bg-indigo-900 text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <span class="bg-white text-indigo-600 dark:bg-indigo-800 dark:text-white p-2 rounded-xl font-extrabold text-xl shadow-inner">
+          <span aria-hidden="true">🎓</span>
+        </span>
+        <div>
+          <h1 class="font-extrabold text-lg sm:text-xl tracking-wide">理社一問一答・実践テスト</h1>
+          <p class="text-xs text-indigo-200">中学校 理科・社会 完全攻略アプリ</p>
+        </div>
+      </div>
+      
+      <!-- Stats bar -->
+      <div class="flex items-center space-x-4 mt-2 sm:mt-0 text-sm">
+        <div class="flex items-center space-x-1 bg-indigo-700/60 px-3 py-1 rounded-full">
+          <span class="text-amber-400" aria-hidden="true">🔥</span>
+          <span id="headerStreak" class="font-bold">0</span> <span class="text-xs">連勝</span>
+        </div>
+        <div class="flex items-center space-x-1 bg-indigo-700/60 px-3 py-1 rounded-full">
+          <span class="text-yellow-300" aria-hidden="true">⭐</span>
+          <span id="headerXp" class="font-bold">120</span> <span class="text-xs">XP</span>
+        </div>
+        <button onclick="toggleDarkMode()" class="p-2 rounded-full hover:bg-indigo-700 transition" title="ダークモード切り替え">
+          <span id="themeIcon" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 shadow-sm sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 flex overflow-x-auto space-x-2 py-2 no-scrollbar">
+      <button onclick="switchTab('quiz')" id="nav-quiz" class="tab-btn px-4 py-2 rounded-xl font-bold text-sm whitespace-nowrap bg-indigo-600 text-white shadow-sm flex items-center space-x-2 transition">
+        <span aria-hidden="true">⚡</span><span>一問一答・演習</span>
+      </button>
+      <button onclick="switchTab('exam')" id="nav-exam" class="tab-btn px-4 py-2 rounded-xl font-bold text-sm whitespace-nowrap text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center space-x-2 transition">
+        <span aria-hidden="true">📝</span><span>定期試験予想テスト</span>
+      </button>
+      <button onclick="switchTab('review')" id="nav-review" class="tab-btn px-4 py-2 rounded-xl font-bold text-sm whitespace-nowrap text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center space-x-2 transition">
+        <span aria-hidden="true">⚠️</span><span>苦手克服・復習BOX</span><span id="reviewCount" class="hidden bg-rose-500 text-white text-xs rounded-full px-2 py-0.5">0</span>
+      </button>
+      <button onclick="switchTab('cards')" id="nav-cards" class="tab-btn px-4 py-2 rounded-xl font-bold text-sm whitespace-nowrap text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center space-x-2 transition">
+        <span aria-hidden="true">📖</span><span>用語暗記カード</span>
+      </button>
+      <button onclick="switchTab('stats')" id="nav-stats" class="tab-btn px-4 py-2 rounded-xl font-bold text-sm whitespace-nowrap text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center space-x-2 transition">
+        <span aria-hidden="true">📊</span><span>学習記録・分析</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main class="flex-grow max-w-6xl w-full mx-auto p-4 sm:p-6">
+    
+    <!-- QUIZ TAB -->
+    <div id="tab-content-quiz" class="space-y-6">
+      
+      <!-- Quick Control & Status Bar -->
+      <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm border border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center space-x-2">
+          <span id="currentQuizBadge" class="bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 text-xs font-extrabold px-3 py-1 rounded-full">
+            すべての単元 (ミックス)
+          </span>
+          <span id="currentModeBadge" class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs font-bold px-3 py-1 rounded-full">
+            エンドレスモード
+          </span>
+        </div>
+        <div class="flex items-center flex-wrap gap-2">
+          <div class="flex items-center gap-1 bg-slate-100 dark:bg-slate-700 p-1 rounded-xl"><button onclick="setQuizSubject('all')" data-subj="all" class="quiz-subj px-3 py-1.5 rounded-xl text-xs font-bold transition">複合</button><button onclick="setQuizSubject('理科')" data-subj="理科" class="quiz-subj px-3 py-1.5 rounded-xl text-xs font-bold transition">理科</button><button onclick="setQuizSubject('社会')" data-subj="社会" class="quiz-subj px-3 py-1.5 rounded-xl text-xs font-bold transition">社会</button></div>
+          <div class="flex items-center gap-1 bg-slate-100 dark:bg-slate-700 p-1 rounded-xl"><span class="text-xs font-bold text-slate-500 pl-2">解答</span><button onclick="setQuizMode('choice')" data-mode="choice" class="quiz-mode px-3 py-1.5 rounded-xl text-xs font-bold transition">選ぶ</button><button onclick="setQuizMode('input')" data-mode="input" class="quiz-mode px-3 py-1.5 rounded-xl text-xs font-bold transition">入力</button><button onclick="setQuizMode('write')" data-mode="write" class="quiz-mode px-3 py-1.5 rounded-xl text-xs font-bold transition">書く</button></div>
+          <button onclick="openSettingsModal()" class="bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 font-bold px-3 py-1.5 rounded-xl text-xs flex items-center space-x-1.5 transition">
+            <span aria-hidden="true">⚙️</span><span>出題設定を変える</span>
+          </button>
+          <button onclick="restartCurrentQuiz()" class="bg-indigo-50 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-300 hover:bg-indigo-100 font-bold px-3 py-1.5 rounded-xl text-xs flex items-center space-x-1.5 transition">
+            <span aria-hidden="true">🔄</span><span>はじめから</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quiz Active Area -->
+      <div id="quizActiveContainer" class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700">
+        <div class="flex justify-between items-center mb-4">
+          <span id="quizBadge" class="bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 text-xs font-extrabold px-3 py-1 rounded-full">理科・回路と電流</span>
+          <div class="text-sm font-bold text-slate-500">
+            問題 <span id="currentQNum">1</span> / <span id="totalQNum">10</span>
+          </div>
+        </div>
+
+        <div class="w-full bg-slate-100 dark:bg-slate-700 h-2 rounded-full mb-6 overflow-hidden">
+          <div id="quizProgressBar" class="bg-indigo-600 h-full w-0 transition-all duration-300"></div>
+        </div>
+
+        <h3 id="questionText" class="text-lg sm:text-xl font-bold mb-6 text-slate-800 dark:text-slate-100 leading-relaxed">
+          ここに問題文がここに表示されます。
+        </h3>
+
+        <!-- Options / Input Area -->
+        <div id="quizOptionsContainer" class="space-y-3 mb-6">
+          <!-- Dynamically injected choices -->
+        </div>
+
+        <!-- Explanation Card -->
+        <div id="explanationBox" class="hidden bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-4 mb-6">
+          <div class="font-extrabold text-sm mb-1 text-indigo-600 dark:text-indigo-400 flex items-center space-x-1">
+            <span aria-hidden="true">ℹ️</span><span>解説</span>
+          </div>
+          <p id="explanationText" class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <button onclick="toggleScratchpad()" class="text-xs bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 px-3 py-2 rounded-xl font-bold flex items-center space-x-1">
+            <span aria-hidden="true">✏️</span><span>メモ・計算用紙</span>
+          </button>
+          <button id="nextQuestionBtn" onclick="nextQuestion()" class="hidden bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold px-6 py-2 rounded-xl shadow transition">
+            次の問題へ <span class="ml-1" aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXAM TAB -->
+    <div id="tab-content-exam" class="space-y-6 hidden">
+      <!-- Setup -->
+      <div id="examSetup" class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center py-12">
+        <div class="w-16 h-16 bg-indigo-100 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-300 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"><span aria-hidden="true">📝</span></div>
+        <h2 class="text-xl font-extrabold mb-2">定期試験 予想模試</h2>
+        <p class="text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto mb-5">教科と解答方式を選んで開始してください。「書く」は端末内の手書き判定で自動採点します（通信不要）。大問形式・100点満点・時間制限つきで、このタブの中でそのままテストを行います。</p>
+        <div class="text-xs font-bold text-slate-500 mb-1">教科</div>
+        <div class="inline-flex gap-1 bg-slate-100 dark:bg-slate-700 p-1 rounded-xl mb-4"><button onclick="setExamSubject('all')" data-subj="all" class="exam-subj px-3 py-1.5 rounded-xl text-xs font-bold transition">複合</button><button onclick="setExamSubject('理科')" data-subj="理科" class="exam-subj px-3 py-1.5 rounded-xl text-xs font-bold transition">理科</button><button onclick="setExamSubject('社会')" data-subj="社会" class="exam-subj px-3 py-1.5 rounded-xl text-xs font-bold transition">社会</button></div>
+        <div class="text-xs font-bold text-slate-500 mb-1">解答方式（テスト中も切り替えできます）</div>
+        <div class="inline-flex gap-1 bg-slate-100 dark:bg-slate-700 p-1 rounded-xl mb-6"><button onclick="setExamMode('choice')" data-mode="choice" class="exam-mode px-3 py-1.5 rounded-xl text-xs font-bold transition">選ぶ</button><button onclick="setExamMode('input')" data-mode="input" class="exam-mode px-3 py-1.5 rounded-xl text-xs font-bold transition">入力</button><button onclick="setExamMode('write')" data-mode="write" class="exam-mode px-3 py-1.5 rounded-xl text-xs font-bold transition">書く</button></div>
+        <div><button onclick="startMockExam()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold px-8 py-3 rounded-xl shadow-lg transition">予想模試を開始する</button></div>
+      </div>
+      <!-- Running -->
+      <div id="examRun" class="hidden bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700">
+        <div class="flex justify-between items-center mb-4">
+          <span id="examBadge" class="bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 text-xs font-extrabold px-3 py-1 rounded-full"></span>
+          <span class="text-sm font-bold text-rose-600"><span class="mr-1" aria-hidden="true">⏱</span>残り <span id="examTimer">0:00</span></span>
+          <span class="fixed bottom-3 right-3 bg-rose-600 text-white text-sm font-bold px-3 py-2 rounded-full shadow-lg z-40"><span class="mr-1" aria-hidden="true">⏱</span><span id="examTimerFloat">0:00</span></span>
+        </div>
+        <div class="flex items-center gap-2 mb-5"><span class="text-xs font-bold text-slate-500">解答方式</span><div class="inline-flex gap-1 bg-slate-100 dark:bg-slate-700 p-1 rounded-xl"><button onclick="setExamMode('choice')" data-mode="choice" class="exam-mode px-3 py-1.5 rounded-xl text-xs font-bold transition">選ぶ</button><button onclick="setExamMode('input')" data-mode="input" class="exam-mode px-3 py-1.5 rounded-xl text-xs font-bold transition">入力</button><button onclick="setExamMode('write')" data-mode="write" class="exam-mode px-3 py-1.5 rounded-xl text-xs font-bold transition">書く</button></div></div>
+        <div id="examQuestions" class="space-y-6"></div>
+        <div class="flex justify-between items-center mt-6">
+          <span class="text-xs text-slate-500">回答済み <span id="examAnswered">0</span> / <span id="examTotal">0</span></span>
+          <button onclick="finishExam()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold px-6 py-2 rounded-xl shadow transition">採点する</button>
+        </div>
+      </div>
+      <!-- Result -->
+      <div id="examResult" class="hidden bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700">
+        <div class="text-center mb-6">
+          <div class="text-xs font-bold text-slate-500 mb-1" id="examResultBadge"></div>
+          <div class="text-4xl font-extrabold text-indigo-600"><span id="examScore">0</span><span class="text-lg text-slate-400"> / <span id="examResultTotal">100</span> 点</span></div>
+          <div class="text-sm text-slate-500 mt-1" id="examPercent"></div>
+        </div>
+        <div id="examReview" class="space-y-4"></div>
+        <div class="text-center mt-6"><button onclick="resetExam()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold px-6 py-2 rounded-xl shadow transition">もう一度・教科を選び直す</button></div>
+      </div>
+    </div>
+
+    <!-- REVIEW TAB -->
+    <div id="tab-content-review" class="space-y-6 hidden">
+      <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700">
+        <h2 class="text-lg font-bold mb-2 flex items-center space-x-2">
+          <span class="text-amber-500" aria-hidden="true">⚠️</span>
+          <span>苦手克服BOX（間違えた問題リスト）</span>
+        </h2>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">過去の演習で間違えた問題が自動で蓄積されます。ここだけで集中的に復習してマスターしましょう！</p>
+        <div id="wrongLogContainer" class="space-y-3">
+          <div class="text-center py-8 text-slate-400 text-sm">現在、間違えた問題はありません。素晴らしい調子です！</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDS TAB -->
+    <div id="tab-content-cards" class="space-y-6 hidden">
+      <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
+        <h2 class="text-lg font-bold mb-1">用語暗記カード</h2>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">理科は法則・公式、社会は年号・用語。タップで裏返し、「覚えた」「まだ」で記録できます。</p>
+        <div class="flex flex-wrap justify-center items-center gap-2 mb-4">
+          <div class="inline-flex gap-1 bg-slate-100 dark:bg-slate-700 p-1 rounded-xl"><button onclick="setCardSubject('all')" data-subj="all" class="cards-subj px-3 py-1.5 rounded-xl text-xs font-bold transition">複合</button><button onclick="setCardSubject('理科')" data-subj="理科" class="cards-subj px-3 py-1.5 rounded-xl text-xs font-bold transition">理科</button><button onclick="setCardSubject('社会')" data-subj="社会" class="cards-subj px-3 py-1.5 rounded-xl text-xs font-bold transition">社会</button></div>
+          <label class="text-xs font-bold text-slate-600 dark:text-slate-300 flex items-center gap-1"><input type="checkbox" id="cardUnknownOnly" onchange="rebuildCards()">未暗記のみ</label>
+          <button onclick="shuffleCards()" class="text-xs font-bold bg-slate-100 dark:bg-slate-700 px-3 py-1.5 rounded-xl"><span class="mr-1" aria-hidden="true">🔀</span>シャッフル</button>
+        </div>
+        <div id="cardCounter" class="text-xs text-slate-500 mb-2"></div>
+        <div class="bg-indigo-50 dark:bg-slate-900 border border-indigo-200 dark:border-slate-700 rounded-2xl p-8 max-w-lg mx-auto shadow-inner cursor-pointer select-none" onclick="flipCard()">
+          <div id="cardSubjectBadge" class="text-xs font-bold text-indigo-600 mb-2"></div>
+          <div id="cardFrontText" class="text-xl font-extrabold mb-4"></div>
+          <div id="cardBackText" class="text-base font-bold text-emerald-700 dark:text-emerald-400 hidden border-t pt-4 border-indigo-100 dark:border-slate-700"></div>
+          <div class="text-xs text-slate-400 mt-4"><span class="mr-1" aria-hidden="true">👆</span>タップして答えを見る</div>
+        </div>
+        <div class="flex justify-center gap-2 mt-4">
+          <button onclick="moveCard(-1)" class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-sm font-bold">前へ</button>
+          <button onclick="markCard(false)" class="px-4 py-2 rounded-xl bg-amber-100 text-amber-800 text-sm font-bold">まだ</button>
+          <button onclick="markCard(true)" class="px-4 py-2 rounded-xl bg-emerald-600 text-white text-sm font-bold">覚えた</button>
+          <button onclick="moveCard(1)" class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-sm font-bold">次へ</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATS TAB -->
+    <div id="tab-content-stats" class="space-y-6 hidden">
+      <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700">
+        <h2 class="text-lg font-bold mb-4 flex items-center space-x-2">
+          <span class="text-indigo-600" aria-hidden="true">📈</span>
+          <span>学習のきろく</span>
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+          <div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-xl">
+            <div class="text-2xl font-extrabold text-indigo-600" id="statTotalAnswered">0</div>
+            <div class="text-xs text-slate-500 mt-1">総解答数</div>
+          </div>
+          <div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-xl">
+            <div class="text-2xl font-extrabold text-emerald-600" id="statAccuracy">0%</div>
+            <div class="text-xs text-slate-500 mt-1">正答率</div>
+          </div>
+          <div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-xl">
+            <div class="text-2xl font-extrabold text-amber-500" id="statStreak">0</div>
+            <div class="text-xs text-slate-500 mt-1">現在の連勝</div>
+          </div>
+          <div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-xl">
+            <div class="text-2xl font-extrabold text-purple-600" id="statXp">120</div>
+            <div class="text-xs text-slate-500 mt-1">獲得XP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Scratchpad Modal (Hidden) -->
+  <div id="scratchpadModal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white dark:bg-slate-800 w-full max-w-lg rounded-2xl p-5 shadow-2xl border border-slate-200 dark:border-slate-700">
+      <div class="flex justify-between items-center mb-3">
+        <h3 class="font-bold text-sm flex items-center space-x-2"><span class="text-indigo-600" aria-hidden="true">✏️</span><span>計算・メモ用紙</span></h3>
+        <button onclick="toggleScratchpad()" class="text-slate-400 hover:text-slate-600"><span class="text-lg" aria-hidden="true">✕</span></button>
+      </div>
+      <canvas id="memoCanvas" class="w-full h-64 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl cursor-crosshair"></canvas>
+      <div class="mt-3 flex justify-end space-x-2">
+        <button onclick="clearMemoCanvas()" class="text-xs bg-slate-200 dark:bg-slate-700 px-3 py-1.5 rounded-lg font-bold">クリア</button>
+        <button onclick="toggleScratchpad()" class="text-xs bg-indigo-600 text-white px-4 py-1.5 rounded-lg font-bold">閉じる</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings Modal (For Changing Subject/Unit/Mode) -->
+  <div id="settingsModal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white dark:bg-slate-800 w-full max-w-lg rounded-2xl p-6 shadow-2xl border border-slate-200 dark:border-slate-700 space-y-4">
+      <div class="flex justify-between items-center border-b pb-3 border-slate-100 dark:border-slate-700">
+        <h3 class="font-bold text-base flex items-center space-x-2"><span class="text-indigo-600" aria-hidden="true">⚙️</span><span>出題設定の変更</span></h3>
+        <button onclick="closeSettingsModal()" class="text-slate-400 hover:text-slate-600"><span class="text-lg" aria-hidden="true">✕</span></button>
+      </div>
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-500 dark:text-slate-400 mb-1">科目選択</label>
+          <select id="modalFilterSubject" onchange="updateModalUnitOptions()" class="w-full bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-3 py-2 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <option value="all">複合（理科・社会ミックス）</option>
+            <option value="理科">理科</option>
+            <option value="社会">社会</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-500 dark:text-slate-400 mb-1">単元（分野）</label>
+          <select id="modalFilterUnit" class="w-full bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-3 py-2 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <option value="all">すべての単元</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-500 dark:text-slate-400 mb-1">出題モード</label>
+          <select id="modalQuizModeSelect" class="w-full bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-3 py-2 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <option value="endless">エンドレスモード</option>
+            <option value="10questions">サクッと10問テスト</option>
+          </select>
+        </div>
+      </div>
+      <div class="pt-3 border-t border-slate-100 dark:border-slate-700 flex justify-end space-x-2">
+        <button onclick="closeSettingsModal()" class="text-xs bg-slate-200 dark:bg-slate-700 px-4 py-2 rounded-xl font-bold">キャンセル</button>
+        <button onclick="applySettingsAndRestart()" class="text-xs bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-xl font-bold shadow">適用してスタート</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript App Logic -->
+  <script>
+    // Database of questions
+    const QUESTIONS_DB = [
+      { id: 1, subject: "理科", unit: "回路と電流", type: "知識・用語", question: "直列回路において、回路を流れる電流の大きさは、回路のどの部分でもどうなっているか？", choices: ["どこでも同じである", "電源に近いほど大きい", "抵抗器の前で小さくなる", "場所によって異なる"], answer: 0, explanation: "直列回路では、電流は途中で分かれないため、どこを流れる電流も同じ大きさになります。" },
+      { id: 2, subject: "理科", unit: "回路と電流", type: "計算問題", question: "10Ωの抵抗に0.5Aの電流が流れているとき、この抵抗にかかる電圧は何Vか？", choices: ["2V", "5V", "20V", "0.05V"], answer: 1, explanation: "オームの法則 V = I × R より、0.5A × 10Ω = 5V となります。" },
+      { id: 3, subject: "理科", unit: "オームの法則", type: "思考・比較", question: "電圧を一定に保ったまま、抵抗の大きさを2倍にすると、流れる電流の大きさはどうなるか？", choices: ["2倍になる", "半分になる", "変わらない", "4倍になる"], answer: 1, explanation: "電流は抵抗に反比例するため、抵抗が2倍になると電流は半分になります。" },
+      { id: 4, subject: "社会", unit: "江戸の成立と対外政策", type: "人物", question: "1603年に江戸幕府を開いた人物は誰か？", choices: ["豊臣秀吉", "織田信長", "徳川家康", "徳川家光"], answer: 2, explanation: "徳川家康が1603年に征夷大将軍に任命され、江戸幕府を開きました。" },
+      { id: 5, subject: "社会", unit: "産業と幕府政治", type: "知識・用語", question: "江戸時代、幕府や藩が商人に対して特権を与え、その見返りに運上金や冥加金を納めさせた組織を何というか？", choices: ["株仲間", "組合", "座", "問屋制"], answer: 0, explanation: "同業者による独占的な組合組織を「株仲間」と呼びます。" },
+      { id: 6, subject: "理科", unit: "電力と発熱", type: "計算問題", question: "100Vで2Aの電流が流れる電気器具の電力は何Wか？", choices: ["50W", "102W", "200W", "400W"], answer: 2, explanation: "電力(W)＝電圧(V)×電流(A)より、100×2＝200Wです。" },
+      { id: 7, subject: "理科", unit: "静電気", type: "知識・用語", question: "異なる種類の物体をこすり合わせて生じる、物体にたまった電気を何というか？", choices: ["静電気", "誘導電流", "直流", "磁力"], answer: 0, explanation: "物体にたまって動かない電気を静電気といいます。" },
+      { id: 8, subject: "社会", unit: "欧米の近代化", type: "知識・用語", question: "1789年にフランスで起こった、市民が絶対王政を倒した出来事は何か？", choices: ["名誉革命", "フランス革命", "アメリカ独立戦争", "産業革命"], answer: 1, explanation: "1789年にフランス革命が起こり、人権宣言が出されました。" },
+      { id: 9, subject: "社会", unit: "欧米と日本の開国", type: "知識・用語", question: "1853年に浦賀に来航し、日本に開国を求めたアメリカの使節は誰か？", choices: ["ハリス", "ペリー", "ラクスマン", "プチャーチン"], answer: 1, explanation: "ペリーが黒船を率いて来航し、翌年日米和親条約が結ばれました。" }
+    ];
+
+    const Q = (n, subject, unit, question, choices, answer, explanation, acc) => QUESTIONS_DB.push({ id: n, subject, unit, type: "知識・用語", question, choices, answer, explanation, acc: acc || [] });
+    QUESTIONS_DB.forEach(q => q.acc = q.acc || []);
+    QUESTIONS_DB[0].acc = ["同じ", "どこでも同じ"]; QUESTIONS_DB[3].acc = ["家康","いえやす"]; QUESTIONS_DB[4].acc = ["かぶなかま"]; QUESTIONS_DB[2].acc = ["半分", "1/2", "2分の1"];
+    Q(10,"理科","回路と電流","並列回路で、各抵抗にかかる電圧の大きさはどうなっているか？",["すべて同じ","抵抗が大きいほど大きい","各抵抗の電圧の和になる","0Vになる"],0,"並列回路では、どの枝にも電源と同じ大きさの電圧がかかります。",["同じ","等しい"]);
+    Q(11,"理科","回路と電流","電流計は、電流をはかりたい部分に対してどのようにつなぐか？",["直列","並列","どちらでもよい","つながない"],0,"電流計は回路の途中に直列につなぎます。");
+    Q(12,"理科","オームの法則","6Vの電圧を加えたとき、2Aの電流が流れた。この抵抗は何Ωか？",["3Ω","4Ω","12Ω","8Ω"],0,"R＝V÷I＝6÷2＝3Ωです。");
+    Q(13,"理科","オームの法則","電圧計は、電圧をはかりたい部分に対してどのようにつなぐか？",["並列","直列","どちらでもよい","つながない"],0,"電圧計ははかりたい部分に並列につなぎます。");
+    Q(14,"理科","オームの法則","10Ωと20Ωの抵抗を直列につないだときの全体の抵抗は何Ωか？",["30Ω","15Ω","6.7Ω","200Ω"],0,"直列回路の全体の抵抗は、各抵抗の和なので30Ωです。");
+    Q(15,"理科","電力と発熱","電力量や熱量を表す単位を何というか？",["ジュール(J)","ワット(W)","アンペア(A)","ボルト(V)"],0,"電力量・熱量の単位はジュール(J)です。Wは電力の単位です。",["ジュール","J"]);
+    Q(16,"理科","電力と発熱","1000Wの電気器具を3時間使ったときの電力量は何kWhか？",["3kWh","1kWh","0.3kWh","30kWh"],0,"1000W＝1kW。1kW×3h＝3kWhです。");
+    Q(17,"理科","電力と発熱","電力(W)を求める式は、どれか？",["電圧×電流","電圧÷電流","電流÷電圧","電圧＋電流"],0,"電力(W)＝電圧(V)×電流(A)です。");
+    Q(18,"理科","静電気","物質をこすり合わせたとき、一方からもう一方へ移動する、－の電気を帯びた粒子は何か？",["電子","陽子","中性子","原子核"],0,"－の電気をもつ電子が移動することで静電気が生じます。");
+    Q(19,"理科","静電気","同じ種類の電気を帯びた物体どうしの間には、どんな力がはたらくか？",["しりぞけ合う力","引き合う力","力ははたらかない","重力のみ"],0,"同じ種類の電気はしりぞけ合い、違う種類は引き合います。",["反発","しりぞけ合う"]);
+    Q(20,"理科","電流と磁界","磁界の向きは、方位磁針のどの向きで表すか？",["N極が指す向き","S極が指す向き","電流の向き","力の向き"],0,"方位磁針のN極が指す向きを磁界の向きとします。",["N極","N極の向き"]);
+    Q(21,"理科","電流と磁界","コイルの中の磁界が変化すると、コイルに電流が流れる現象を何というか？",["電磁誘導","静電誘導","電気分解","放電"],0,"この現象を電磁誘導といい、流れる電流を誘導電流といいます。");
+    Q(22,"理科","電流と磁界","磁界の中で電流が受ける力を大きくする方法を1つ答えよ。",["電流を大きくする","導線を短くする","電圧を下げる","磁石を離す"],0,"電流を大きくするか、磁界を強くすると力は大きくなります。",["電流を強くする","磁石を強くする","磁界を強くする"]);
+    Q(23,"理科","電流と磁界","向きが周期的に入れかわる電流を何というか？",["交流","直流","静電気","誘導電流"],0,"向きが周期的に変わる電流が交流、一定の向きに流れるのが直流です。");
+    Q(24,"社会","江戸の成立と対外政策","参勤交代を制度として定めた江戸幕府の3代将軍は誰か？",["徳川家光","徳川綱吉","徳川吉宗","徳川家康"],0,"徳川家光が武家諸法度に参勤交代を加えました。",["家光"]);
+    Q(25,"社会","江戸の成立と対外政策","江戸幕府が大名を統制するために定めた法律は何か？",["武家諸法度","御成敗式目","十七条の憲法","大宝律令"],0,"武家諸法度は大名の行動を細かく定めた法律です。");
+    Q(26,"社会","江戸の成立と対外政策","鎖国中、長崎の出島で幕府と貿易を行ったヨーロッパの国はどこか？",["オランダ","ポルトガル","スペイン","イギリス"],0,"鎖国中も、オランダと中国（清）は長崎で貿易を許されました。");
+    Q(27,"社会","江戸の成立と対外政策","1637年に起こった、キリスト教徒や農民による一揆を何というか？",["島原・天草一揆","応仁の乱","承久の乱","壬申の乱"],0,"この一揆をきっかけに幕府は禁教と鎖国をさらに強めました。",["島原の乱","島原天草一揆"]);
+    Q(28,"社会","産業と幕府政治","享保の改革を行った江戸幕府の将軍は誰か？",["徳川吉宗","徳川家光","徳川綱吉","徳川慶喜"],0,"8代将軍徳川吉宗は倹約や公事方御定書の制定などを行いました。",["吉宗"]);
+    Q(29,"社会","産業と幕府政治","老中の松平定信が行った政治改革を何というか？",["寛政の改革","天保の改革","享保の改革","明治維新"],0,"松平定信は倹約や、旗本・御家人の借金帳消しなどを行いました。");
+    Q(30,"社会","産業と幕府政治","江戸時代に「天下の台所」とよばれ、商業の中心として栄えた都市はどこか？",["大阪","京都","江戸","長崎"],0,"大阪には諸藩の蔵屋敷が置かれ、年貢米や特産物が集まりました。",["大坂","大阪"]);
+    Q(31,"社会","産業と幕府政治","天保の改革を行った老中は誰か？",["水野忠邦","田沼意次","松平定信","井伊直弼"],0,"水野忠邦は株仲間の解散などを行いましたが、反発を受けました。");
+    Q(32,"社会","欧米の近代化","1688年にイギリスで起こり、翌年「権利章典」が出された革命を何というか？",["名誉革命","ピューリタン革命","フランス革命","産業革命"],0,"血を流さずに国王を交代させたため名誉革命とよばれます。");
+    Q(33,"社会","欧米の近代化","アメリカ独立宣言が出されたのは何年か？",["1776年","1789年","1853年","1868年"],0,"1776年に独立宣言が出されました。",["1776"]);
+    Q(34,"社会","欧米の近代化","蒸気機関を改良し、産業革命を進めたイギリスの技術者は誰か？",["ワット","ニュートン","ナポレオン","リンカン"],0,"ワットの改良した蒸気機関が工場や交通に広まりました。");
+    Q(35,"社会","欧米の近代化","南北戦争のとき、奴隷解放宣言を出したアメリカ大統領は誰か？",["リンカン","ワシントン","ナポレオン","ペリー"],0,"リンカンは奴隷解放を宣言しました。",["リンカーン"]);
+    Q(36,"社会","欧米と日本の開国","1858年、日米修好通商条約を結んだ江戸幕府の大老は誰か？",["井伊直弼","水野忠邦","徳川慶喜","勝海舟"],0,"井伊直弼は朝廷の許可を得ずに条約を結びました。");
+    Q(37,"社会","欧米と日本の開国","日米修好通商条約で認めた、外国人の犯罪を日本の法律で裁けない権利を何というか？",["領事裁判権","関税自主権","参政権","黙認耕作権"],0,"領事裁判権（治外法権）を認め、さらに関税自主権がありませんでした。",["治外法権"]);
+    Q(38,"社会","欧米と日本の開国","開国後、日本の主な輸出品だったものは何か？",["生糸","米","石炭","鉄"],0,"生糸や茶が主な輸出品で、国内の物価が上がりました。");
+    Q(39,"社会","欧米と日本の開国","1867年に大政奉還を行った江戸幕府最後の将軍は誰か？",["徳川慶喜","徳川家茂","坂本龍馬","西郷隆盛"],0,"徳川慶喜が政権を朝廷に返しました。",["慶喜"]);
+
+    const UNITS = {
+      理科: ["回路と電流", "オームの法則", "電力と発熱", "静電気", "電流と磁界"],
+      社会: ["江戸の成立と対外政策", "産業と幕府政治", "欧米の近代化", "欧米と日本の開国"]
+    };
+
+    let state = {
+      activeTab: "quiz",
+      streak: 0,
+      xp: 120,
+      totalAnswered: 0,
+      totalCorrect: 0,
+      currentQuiz: [],
+      currentIndex: 0,
+      score: 0,
+      currentSubject: "all",
+      currentUnit: "all",
+      currentMode: "endless"
+    };
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-indigo-600', 'text-white', 'shadow-sm');
+        btn.classList.add('text-slate-600', 'dark:text-slate-300', 'hover:bg-slate-100', 'dark:hover:bg-slate-700');
+      });
+      document.getElementById('nav-' + tabId).classList.add('bg-indigo-600', 'text-white', 'shadow-sm');
+      document.getElementById('nav-' + tabId).classList.remove('text-slate-600', 'dark:text-slate-300', 'hover:bg-slate-100', 'dark:hover:bg-slate-700');
+
+      ['quiz', 'exam', 'review', 'cards', 'stats'].forEach(id => {
+        document.getElementById('tab-content-' + id).classList.add('hidden');
+      });
+      document.getElementById('tab-content-' + tabId).classList.remove('hidden');
+      state.activeTab = tabId;
+      if(tabId === 'stats') updateStatsDisplay();
+      if(tabId === 'review') renderReview();
+      if(tabId === 'cards') renderCard();
+    }
+
+    function openSettingsModal() {
+      document.getElementById('modalFilterSubject').value = state.currentSubject;
+      updateModalUnitOptions();
+      document.getElementById('modalFilterUnit').value = state.currentUnit;
+      document.getElementById('modalQuizModeSelect').value = state.currentMode;
+      document.getElementById('settingsModal').classList.remove('hidden');
+    }
+
+    function closeSettingsModal() {
+      document.getElementById('settingsModal').classList.add('hidden');
+    }
+
+    function updateModalUnitOptions() {
+      const sub = document.getElementById('modalFilterSubject').value;
+      const unitSelect = document.getElementById('modalFilterUnit');
+      unitSelect.innerHTML = '<option value="all">すべての単元</option>';
+      if(sub !== 'all' && UNITS[sub]) {
+        UNITS[sub].forEach(u => {
+          const opt = document.createElement('option');
+          opt.value = u;
+          opt.textContent = u;
+          unitSelect.appendChild(opt);
+        });
+      } else {
+        Object.keys(UNITS).forEach(s => {
+          UNITS[s].forEach(u => {
+            const opt = document.createElement('option');
+            opt.value = u;
+            opt.textContent = `[${s}] ${u}`;
+            unitSelect.appendChild(opt);
+          });
+        });
+      }
+    }
+
+    function applySettingsAndRestart() {
+      state.currentSubject = document.getElementById('modalFilterSubject').value;
+      state.currentUnit = document.getElementById('modalFilterUnit').value;
+      state.currentMode = document.getElementById('modalQuizModeSelect').value;
+
+      // Update badges
+      updateQuizBadges();
+
+      closeSettingsModal();
+      startQuizSession();
+    }
+
+    const ACTIVE = ['bg-indigo-600','text-white','shadow-sm'];
+    const IDLE = ['text-slate-600','dark:text-slate-200','hover:bg-slate-200','dark:hover:bg-slate-600'];
+    function markChips(cls, sub, key) {
+      document.querySelectorAll('.' + cls).forEach(b => {
+        const on = b.dataset[key || 'subj'] === sub;
+        ACTIVE.forEach(c => b.classList.toggle(c, on));
+        IDLE.forEach(c => b.classList.toggle(c, !on));
+      });
+    }
+    function updateQuizBadges() {
+      const sub = state.currentSubject;
+      document.getElementById('currentQuizBadge').textContent = sub === 'all' ? '複合（理科・社会ミックス）' : `${sub}・${state.currentUnit === 'all' ? '全単元' : state.currentUnit}`;
+      document.getElementById('currentModeBadge').textContent = state.currentMode === 'endless' ? 'エンドレスモード' : '10問テスト';
+      if (state.reviewMode) document.getElementById('currentQuizBadge').textContent = '苦手克服モード（間違えた問題）';
+      markChips('quiz-subj', state.reviewMode ? '' : sub, 'subj');
+      markChips('quiz-mode', state.quizMode, 'mode');
+    }
+    function setQuizSubject(sub) {
+      state.currentSubject = sub;
+      state.currentUnit = 'all';
+      updateQuizBadges();
+      startQuizSession();
+    }
+
+    // ===== Exam (runs inside the exam tab) =====
+    let exam = { subject: 'all', mode: 'choice', qs: [], ans: [], marks: [], timerId: null, left: 0, applied: 0 };
+    const subjLabel = s => s === 'all' ? '複合' : s;
+    const answerText = q => q.choices[q.answer];
+    function setExamSubject(v) { exam.subject = v; markChips('exam-subj', v, 'subj'); }
+    function setExamMode(v) {
+      exam.mode = v; markChips('exam-mode', v, 'mode');
+      if (!document.getElementById('examRun').classList.contains('hidden')) renderExam();
+    }
+    function fmtTime(t) { return `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`; }
+    function setTimer() { const t = fmtTime(Math.max(exam.left, 0)); document.getElementById('examTimer').textContent = t; document.getElementById('examTimerFloat').textContent = t; }
+    function showExamPart(id) {
+      ['examSetup', 'examRun', 'examResult'].forEach(x => document.getElementById(x).classList.toggle('hidden', x !== id));
+    }
+    function startMockExam() {
+      const pool = exam.subject === 'all' ? QUESTIONS_DB : QUESTIONS_DB.filter(q => q.subject === exam.subject);
+      const max = exam.subject === 'all' ? 30 : 20;
+      const unitOrder = q => (q.subject === '理科' ? 0 : 100) + UNITS[q.subject].indexOf(q.unit);
+      exam.qs = [...pool].sort(() => Math.random() - 0.5).slice(0, max).sort((x, y) => unitOrder(x) - unitOrder(y));
+      exam.ans = exam.qs.map(() => ({ c: null, t: '', ink: '' }));
+      exam.left = Math.min(50 * 60, exam.qs.length * 90);
+      document.getElementById('examBadge').textContent = `${subjLabel(exam.subject)}・予想模試（${exam.qs.length}問）`;
+      document.getElementById('examTotal').textContent = exam.qs.length;
+      markChips('exam-mode', exam.mode, 'mode');
+      renderExam();
+      showExamPart('examRun');
+      window.scrollTo(0, 0);
+      clearInterval(exam.timerId);
+      setTimer();
+      exam.timerId = setInterval(() => {
+        exam.left--;
+        setTimer();
+        if (exam.left <= 0) finishExam();
+      }, 1000);
+    }
+    function isAnswered(i) {
+      const a = exam.ans[i];
+      return exam.mode === 'choice' ? a.c !== null : exam.mode === 'input' ? a.t.trim() !== '' : a.ink !== '';
+    }
+    function updateAnswered() {
+      document.getElementById('examAnswered').textContent = exam.qs.filter((_, i) => isAnswered(i)).length;
+    }
+    function renderExam() {
+      const box = document.getElementById('examQuestions');
+      box.innerHTML = '';
+      let lastUnit = '', part = 0;
+      exam.qs.forEach((q, i) => {
+        const key = q.subject + q.unit;
+        if (key !== lastUnit) {
+          lastUnit = key; part++;
+          const h = document.createElement('div');
+          h.className = 'border-l-4 border-indigo-500 pl-3 font-extrabold text-sm bg-indigo-50 dark:bg-slate-900 py-2 rounded-r-lg';
+          h.textContent = `大問${part}　${q.subject}・${q.unit}`;
+          box.appendChild(h);
+        }
+        const wrap = document.createElement('div');
+        wrap.innerHTML = `<p class="font-bold mb-3 leading-relaxed">問${i + 1}　${q.question}</p><div class="ans-area"></div>`;
+        const area = wrap.querySelector('.ans-area');
+        const a = exam.ans[i];
+        if (exam.mode === 'choice') {
+          area.className = 'space-y-2';
+          q.choices.forEach((c, k) => {
+            const b = document.createElement('button');
+            const on = a.c === k;
+            b.className = `w-full text-left p-3 rounded-xl border font-bold text-sm transition ${on ? 'border-indigo-500 bg-indigo-100 dark:bg-indigo-900/40' : 'border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 hover:bg-indigo-50 dark:hover:bg-slate-800'}`;
+            b.textContent = `${String.fromCharCode(65 + k)}．${c}`;
+            b.onclick = () => { a.c = k; renderExamKeepScroll(); };
+            area.appendChild(b);
+          });
+        } else if (exam.mode === 'input') {
+          const inp = document.createElement('input');
+          inp.type = 'text'; inp.value = a.t; inp.placeholder = '答えを入力';
+          inp.className = 'w-full p-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-900 font-bold text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500';
+          inp.oninput = () => { a.t = inp.value; updateAnswered(); };
+          area.appendChild(inp);
+        } else {
+          area.innerHTML = `<canvas class="w-full bg-white border-2 border-dashed border-slate-300 rounded-xl" style="touch-action:none;height:180px"></canvas>
+            <div class="flex justify-between text-xs text-slate-400 mt-1"><span><span class="mr-1" aria-hidden="true">✏️</span>指やマウスで答えを書いてください</span><button class="font-bold text-slate-500 hover:text-rose-500 clr">消す</button></div>`;
+          const cv = area.querySelector('canvas');
+          box.appendChild(wrap);
+          setupInk(cv, a);
+          area.querySelector('.clr').onclick = () => { clearInk(cv); a.ink = ''; updateAnswered(); };
+          return;
+        }
+        box.appendChild(wrap);
+      });
+      updateAnswered();
+    }
+    function renderExamKeepScroll() { const y = window.scrollY; renderExam(); window.scrollTo(0, y); }
+    function clearInk(cv) { const c = cv.getContext('2d'); c.save(); c.setTransform(1, 0, 0, 1, 0, 0); c.clearRect(0, 0, cv.width, cv.height); c.restore(); }
+    function setupInk(cv, a) {
+      const dpr = window.devicePixelRatio || 1, cssW = cv.clientWidth || 300, cssH = cv.clientHeight || 180;
+      cv.width = Math.round(cssW * dpr); cv.height = Math.round(cssH * dpr);
+      const ctx = cv.getContext('2d');
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.strokeStyle = '#1e293b'; ctx.lineWidth = 3.5; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      if (a.ink) { const im = new Image(); im.onload = () => ctx.drawImage(im, 0, 0, cssW, cssH); im.src = a.ink; }
+      let drawing = false, last = null;
+      const pos = e => { const r = cv.getBoundingClientRect(); return [(e.clientX - r.left) * cssW / r.width, (e.clientY - r.top) * cssH / r.height]; };
+      cv.oncontextmenu = e => e.preventDefault();
+      cv.onpointerdown = e => { e.preventDefault(); drawing = true; cv.setPointerCapture(e.pointerId); last = pos(e); ctx.beginPath(); ctx.moveTo(last[0], last[1]); ctx.lineTo(last[0] + 0.01, last[1]); ctx.stroke(); ctx.beginPath(); ctx.moveTo(last[0], last[1]); };
+      cv.onpointermove = e => {
+        if (!drawing) return; e.preventDefault();
+        const p = pos(e), mx = (last[0] + p[0]) / 2, my = (last[1] + p[1]) / 2;
+        ctx.quadraticCurveTo(last[0], last[1], mx, my); ctx.stroke(); ctx.beginPath(); ctx.moveTo(mx, my); last = p;
+      };
+      const end = () => { if (!drawing) return; drawing = false; a.ink = cv.toDataURL('image/png'); if (typeof updateAnswered === 'function') updateAnswered(); };
+      cv.onpointerup = end; cv.onpointercancel = end;
+    }
+    // 書いた答え用：正解候補（表記ゆれ込み）と、まぎらわしい誤答候補
+    function writeCands(q) {
+      const set = new Set();
+      [answerText(q), ...q.acc].forEach(t => {
+        set.add(t.replace(/\s/g, '')); set.add(t.replace(/[（(].*?[）)]/g, ''));
+        (t.match(/[（(](.*?)[）)]/g) || []).forEach(m => set.add(m.slice(1, -1)));
+      });
+      const correct = [...set].filter(Boolean);
+      return [correct, q.choices.filter(c => !set.has(c.replace(/\s/g, '')) && c !== answerText(q))];
+    }
+    function judgeInk(dataUrl, q) {
+      return new Promise(res => {
+        if (!dataUrl) return res({ blank: true, pass: false, best: 0 });
+        const im = new Image();
+        im.onload = () => { const c = document.createElement('canvas'); c.width = im.width; c.height = im.height; c.getContext('2d').drawImage(im, 0, 0); const [cor, wr] = writeCands(q); res(HW.judge(c, cor, wr)); };
+        im.src = dataUrl;
+      });
+    }
+
+    // ===== 手書き判定エンジン（通信不要・端末内で完結） =====
+const HW = (function () {
+  const H = 40;
+  const FONT = '"Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Meiryo","Noto Sans CJK JP","Noto Sans JP","IPAGothic",sans-serif';
+  const P = { r: 0.09, arSigma: 0.7, minC: 0.28, margin: 0.01, wMin: 0 };
+
+  function boxMask(cv) {
+    const W = cv.width, Hh = cv.height;
+    const d = cv.getContext('2d').getImageData(0, 0, W, Hh).data;
+    let x0 = W, y0 = Hh, x1 = -1, y1 = -1, count = 0;
+    for (let y = 0; y < Hh; y++) for (let x = 0; x < W; x++) {
+      if (d[(y * W + x) * 4 + 3] > 60) { count++; if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+    }
+    if (x1 < 0) return null;
+    const w = x1 - x0 + 1, h = y1 - y0 + 1, m = new Uint8Array(w * h);
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) m[y * w + x] = d[((y + y0) * W + x + x0) * 4 + 3] > 60 ? 1 : 0;
+    return { w, h, m, count, x0 };
+  }
+  const cache = {};
+  function renderText(text) {
+    if (cache[text]) return cache[text];
+    const c = document.createElement('canvas'), ctx = c.getContext('2d');
+    ctx.font = `500 100px ${FONT}`;
+    c.width = Math.ceil(ctx.measureText(text).width) + 40; c.height = 170;
+    ctx.font = `500 100px ${FONT}`; ctx.fillStyle = '#000'; ctx.textBaseline = 'alphabetic';
+    ctx.fillText(text, 20, 125);
+    const b = boxMask(c); if (!b) return (cache[text] = null);
+    b.chars = []; const cs = [...text]; let pre = '';
+    cs.forEach(ch => { const a = ctx.measureText(pre).width, e = ctx.measureText(pre + ch).width; pre += ch; if (ch.trim()) b.chars.push([20 + a - b.x0, 20 + e - b.x0]); });
+    return (cache[text] = b);
+  }
+  function resample(b, W, Hn) {
+    const iw = b.w + 1, I = new Float32Array(iw * (b.h + 1));
+    for (let y = 0; y < b.h; y++) { let row = 0; for (let x = 0; x < b.w; x++) { row += b.m[y * b.w + x]; I[(y + 1) * iw + x + 1] = I[y * iw + x + 1] + row; } }
+    const PAD = 2, OW = W + PAD * 2, out = new Uint8Array(OW * (Hn + PAD * 2));
+    for (let y = 0; y < Hn; y++) for (let x = 0; x < W; x++) {
+      const sx0 = Math.floor(x * b.w / W), sx1 = Math.max(sx0 + 1, Math.ceil((x + 1) * b.w / W));
+      const sy0 = Math.floor(y * b.h / Hn), sy1 = Math.max(sy0 + 1, Math.ceil((y + 1) * b.h / Hn));
+      const s = I[sy1 * iw + sx1] - I[sy0 * iw + sx1] - I[sy1 * iw + sx0] + I[sy0 * iw + sx0];
+      if (s / ((sx1 - sx0) * (sy1 - sy0)) > 0.3) out[(y + PAD) * OW + x + PAD] = 1;
+    }
+    return { m: out, W: OW, H: Hn + PAD * 2 };
+  }
+  function thin(img) {
+    const W = img.W, Hh = img.H, a = Uint8Array.from(img.m);
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (let step = 0; step < 2; step++) {
+        const del = [];
+        for (let y = 1; y < Hh - 1; y++) for (let x = 1; x < W - 1; x++) {
+          const i = y * W + x; if (!a[i]) continue;
+          const p2 = a[i - W], p3 = a[i - W + 1], p4 = a[i + 1], p5 = a[i + W + 1], p6 = a[i + W], p7 = a[i + W - 1], p8 = a[i - 1], p9 = a[i - W - 1];
+          const B = p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9; if (B < 2 || B > 6) continue;
+          const A = (!p2 && p3) + (!p3 && p4) + (!p4 && p5) + (!p5 && p6) + (!p6 && p7) + (!p7 && p8) + (!p8 && p9) + (!p9 && p2);
+          if (A !== 1) continue;
+          if (step === 0) { if (p2 * p4 * p6 || p4 * p6 * p8) continue; } else { if (p2 * p4 * p8 || p2 * p6 * p8) continue; }
+          del.push(i);
+        }
+        if (del.length) { changed = true; del.forEach(i => a[i] = 0); }
+      }
+    }
+    return { m: a, W, H: Hh };
+  }
+  function dt(s) {
+    const W = s.W, Hh = s.H, d = new Float32Array(W * Hh).fill(1e6);
+    for (let i = 0; i < d.length; i++) if (s.m[i]) d[i] = 0;
+    for (let y = 0; y < Hh; y++) for (let x = 0; x < W; x++) { const i = y * W + x; let v = d[i];
+      if (x > 0) v = Math.min(v, d[i - 1] + 1); if (y > 0) { v = Math.min(v, d[i - W] + 1); if (x > 0) v = Math.min(v, d[i - W - 1] + 1.414); if (x < W - 1) v = Math.min(v, d[i - W + 1] + 1.414); } d[i] = v; }
+    for (let y = Hh - 1; y >= 0; y--) for (let x = W - 1; x >= 0; x--) { const i = y * W + x; let v = d[i];
+      if (x < W - 1) v = Math.min(v, d[i + 1] + 1); if (y < Hh - 1) { v = Math.min(v, d[i + W] + 1); if (x < W - 1) v = Math.min(v, d[i + W + 1] + 1.414); if (x > 0) v = Math.min(v, d[i + W - 1] + 1.414); } d[i] = v; }
+    return d;
+  }
+  function cover(a, d, r) { let s = 0, n = 0; for (let i = 0; i < a.m.length; i++) if (a.m[i]) { n++; s += Math.exp(-(d[i] * d[i]) / (r * r)); } return n ? s / n : 0; }
+
+  function pixels(sk) { const o = []; for (let i = 0; i < sk.m.length; i++) if (sk.m[i]) o.push(i % sk.W, (i / sk.W) | 0); return o; }
+  function score(ink, inkAR, text) {
+    const cand = renderText(text); if (!cand || !cand.chars.length) return 0;
+    const car = cand.w / cand.h, W = Math.max(Math.round(H * car), 8), r = P.r * H, k = W / cand.w;
+    const A = thin(resample(ink, W, H)), B = thin(resample(cand, W, H));
+    const dA = dt(A), Ap = pixels(A), Bp = pixels(B), Wd = A.W, Hd = A.H;
+    const per = [];
+    cand.chars.forEach(([xs, xe]) => {
+      const a = Math.floor(xs * k) + 2 - 1, b = Math.ceil(xe * k) + 2 + 1, cw = b - a;
+      const bi = []; for (let j = 0; j < Bp.length; j += 2) if (Bp[j] >= a && Bp[j] <= b) bi.push(Bp[j], Bp[j + 1]);
+      if (!bi.length) return;
+      const bm = new Uint8Array(Wd * Hd); for (let j = 0; j < bi.length; j += 2) bm[bi[j + 1] * Wd + bi[j]] = 1;
+      const dB = dt({ m: bm, W: Wd, H: Hd });
+      const S = Math.round(cw * 0.4); let best = 0;
+      for (let sx = -S; sx <= S; sx += 2) for (let dy = -3; dy <= 3; dy += 3) {
+        let s1 = 0, n1 = bi.length / 2;
+        for (let j = 0; j < bi.length; j += 2) { const x = bi[j] + sx, y = bi[j + 1] + dy; const d = (x < 0 || y < 0 || x >= Wd || y >= Hd) ? 99 : dA[y * Wd + x]; s1 += Math.exp(-(d * d) / (r * r)); }
+        let s2 = 0, n2 = 0;
+        for (let j = 0; j < Ap.length; j += 2) { const x = Ap[j] - sx, y = Ap[j + 1] - dy; if (x < a || x > b) continue; n2++; const d = (y < 0 || y >= Hd) ? 99 : dB[y * Wd + x]; s2 += Math.exp(-(d * d) / (r * r)); }
+        const v = n2 ? Math.sqrt((s1 / n1) * (s2 / n2)) : 0; if (v > best) best = v;
+      }
+      per.push(best);
+    });
+    const lr = Math.log(inkAR / car);
+    const mean = per.reduce((x, y) => x + y, 0) / per.length, mn = Math.min(...per);
+    return (P.wMin * mn + (1 - P.wMin) * mean) * Math.exp(-(lr * lr) / (2 * P.arSigma * P.arSigma));
+  }
+  function judge(inkCv, correct, wrong) {
+    const ink = boxMask(inkCv);
+    if (!ink || ink.count < 30) return { blank: true, pass: false, best: 0 };
+    const ar = ink.w / ink.h;
+    let bc = 0, bct = '', bw = 0, bwt = '';
+    correct.forEach(t => { const s = score(ink, ar, t); if (s > bc) { bc = s; bct = t; } });
+    wrong.forEach(t => { const s = score(ink, ar, t); if (s > bw) { bw = s; bwt = t; } });
+    return { blank: false, pass: bc >= P.minC && bc >= bw - P.margin, best: bc, bestText: bct, rival: bw, rivalText: bwt };
+  }
+  return { judge, boxMask, P, score, renderText };
+})();
+
+    // Lenient text judging
+    function norm(s) {
+      return (s || '').normalize('NFKC').toLowerCase()
+        .replace(/[\u30a1-\u30f6]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60))
+        .replace(/[\s、。,.・「」『』()\[\]【】\-ー~〜?？!！]/g, '').replace(/(です|だ)$/, '');
+    }
+    function edit(a, b) {
+      const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
+      for (let j = 1; j <= b.length; j++) d[0][j] = j;
+      for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++)
+        d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      return d[a.length][b.length];
+    }
+    function judgeText(input, q) {
+      const x = norm(input);
+      if (!x) return 0;
+      const base = [answerText(q), ...q.acc];
+      const cands = new Set();
+      base.forEach(t => {
+        cands.add(t);
+        cands.add(t.replace(/[（(].*?[）)]/g, ''));
+        (t.match(/[（(](.*?)[）)]/g) || []).forEach(m => cands.add(m.slice(1, -1)));
+      });
+      for (const c0 of cands) {
+        const c = norm(c0);
+        if (!c) continue;
+        if (x === c) return 1;
+        const nx = parseFloat(x), nc = parseFloat(c);
+        if (/^[\d.]+/.test(x) && /^[\d.]+/.test(c) && nx === nc) return 1;
+        if (x.length >= 2 && c.includes(x) && x.length / c.length >= 0.5) return 1;
+        if (c.length >= 2 && x.includes(c)) return 1;
+        if (c.length >= 3 && edit(x, c) <= 1) return 1;
+      }
+      return 0;
+    }
+
+    function finishExam() {
+      clearInterval(exam.timerId);
+      if (exam.mode === 'write') {
+        Promise.all(exam.qs.map((q, i) => judgeInk(exam.ans[i].ink, q))).then(rs => { exam.marks = rs.map(r => r.pass ? 1 : 0); concludeExam(); });
+        return;
+      }
+      exam.marks = exam.qs.map((q, i) => {
+        const a = exam.ans[i];
+        return exam.mode === 'choice' ? (a.c === q.answer ? 1 : 0) : judgeText(a.t, q);
+      });
+      concludeExam();
+    }
+    function concludeExam() {
+      exam.qs.forEach((q, i) => { if (exam.marks[i] < 1) addWrong(q); });
+      exam.applied = 0;
+      state.totalAnswered += exam.qs.length;
+      renderResult();
+      showExamPart('examResult');
+      window.scrollTo(0, 0);
+    }
+    function sumMarks() { return exam.marks.reduce((x, y) => x + y, 0); }
+    function renderResult() {
+      const n = exam.qs.length, review = document.getElementById('examReview');
+      review.innerHTML = '';
+      const modeName = { choice: '選ぶ', input: '入力', write: '書く' }[exam.mode];
+      exam.qs.forEach((q, i) => {
+        const a = exam.ans[i], m = exam.marks[i];
+        const d = document.createElement('div');
+        d.className = `p-4 rounded-xl border ${m === 1 ? 'border-emerald-400 bg-emerald-50 dark:bg-emerald-900/20' : m === 0.5 ? 'border-amber-400 bg-amber-50 dark:bg-amber-900/20' : 'border-rose-400 bg-rose-50 dark:bg-rose-900/20'}`;
+        let mine = '';
+        if (exam.mode === 'choice') mine = `<div class="text-xs">あなたの答え：${a.c === null ? '未回答' : q.choices[a.c]}</div>`;
+        else if (exam.mode === 'input') mine = `<div class="text-xs">あなたの答え：${a.t.trim() ? a.t.replace(/</g, '&lt;') : '未回答'}</div>`;
+        else mine = a.ink ? `<div class="text-xs mb-1">あなたの答え：</div><img src="${a.ink}" class="bg-white rounded-lg border border-slate-200 max-h-28">` : '<div class="text-xs">あなたの答え：未回答</div>';
+        d.innerHTML = `<div class="font-bold text-sm mb-1">${m === 1 ? '⭕' : m === 0.5 ? '△' : '❌'} 問${i + 1}　${q.question}</div>${mine}
+          <div class="text-xs font-bold mt-1">正解：${answerText(q)}</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">${q.explanation}</div>`;
+        if (exam.mode !== 'choice') {
+          const bar = document.createElement('div');
+          bar.className = 'flex items-center gap-1 mt-2 text-xs';
+          bar.innerHTML = '<span class="text-slate-500 mr-1">判定を直す：</span>';
+          [[1, '⭕'], [0.5, '△'], [0, '❌']].forEach(([v, l]) => {
+            const b = document.createElement('button');
+            b.className = `px-2 py-1 rounded-lg font-bold ${m === v ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600'}`;
+            b.textContent = l;
+            b.onclick = () => { exam.marks[i] = v; fixWrong(q, v === 1); renderResult(); };
+            bar.appendChild(b);
+          });
+          d.appendChild(bar);
+        }
+        review.appendChild(d);
+      });
+      const score = sumMarks();
+      const delta = Math.round(score) - exam.applied;
+      state.totalCorrect += delta; state.xp += delta * 10; exam.applied += delta;
+      document.getElementById('headerXp').textContent = state.xp;
+      document.getElementById('examScore').textContent = Math.round(score / n * 100);
+      document.getElementById('examResultTotal').textContent = 100;
+      document.getElementById('examPercent').textContent = `${n}問中 ${score}問分正解（解答方式：${modeName}）`;
+      document.getElementById('examResultBadge').textContent = `${subjLabel(exam.subject)}・予想模試の結果`;
+    }
+    function resetExam() { showExamPart('examSetup'); window.scrollTo(0, 0); }
+
+    function restartCurrentQuiz() {
+      startQuizSession(state.reviewMode);
+    }
+
+    Object.assign(state, { quizMode: 'choice', reviewMode: false, answered: false, wrong: {}, known: {} });
+    const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
+    function saveStore() { try { localStorage.setItem('risha_store', JSON.stringify({ wrong: state.wrong, known: state.known })); } catch (e) {} }
+    function loadStore() { try { const d = JSON.parse(localStorage.getItem('risha_store') || '{}'); state.wrong = d.wrong || {}; state.known = d.known || {}; } catch (e) {} }
+
+    function setQuizMode(m) {
+      state.quizMode = m; markChips('quiz-mode', m, 'mode');
+      if (state.currentQuiz.length && !state.answered) renderQuestion();
+    }
+
+    function startQuizSession(review) {
+      state.reviewMode = !!review;
+      if (state.reviewMode) {
+        const list = QUESTIONS_DB.filter(q => state.wrong[q.id]);
+        if (!list.length) { alert('苦手BOXは空です。'); state.reviewMode = false; return startQuizSession(false); }
+        state.currentQuiz = shuffle(list);
+      } else {
+        let filtered = QUESTIONS_DB;
+        if (state.currentSubject !== 'all') filtered = filtered.filter(q => q.subject === state.currentSubject);
+        if (state.currentUnit !== 'all') filtered = filtered.filter(q => q.unit === state.currentUnit);
+        if (filtered.length === 0) filtered = QUESTIONS_DB;
+        const limit = state.currentMode === '10questions' ? 10 : filtered.length;
+        state.currentQuiz = shuffle(filtered).slice(0, limit);
+      }
+      state.currentIndex = 0;
+      state.score = 0;
+      updateQuizBadges();
+      renderQuestion();
+    }
+
+    function renderQuestion() {
+      const q = state.currentQuiz[state.currentIndex];
+      if (!q) return;
+      state.answered = false;
+      document.getElementById('quizBadge').textContent = `${q.subject}・${q.unit}${q.retry ? '（復習問題）' : ''}`;
+      document.getElementById('currentQNum').textContent = state.currentIndex + 1;
+      document.getElementById('totalQNum').textContent = state.currentQuiz.length;
+      document.getElementById('quizProgressBar').style.width = `${((state.currentIndex + 1) / state.currentQuiz.length) * 100}%`;
+      document.getElementById('questionText').textContent = q.question;
+      document.getElementById('explanationBox').classList.add('hidden');
+      document.getElementById('nextQuestionBtn').classList.add('hidden');
+
+      const box = document.getElementById('quizOptionsContainer');
+      box.innerHTML = '';
+      if (state.quizMode === 'choice') {
+        q.choices.forEach((choice, idx) => {
+          const btn = document.createElement('button');
+          btn.className = 'w-full text-left p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 hover:bg-indigo-50 dark:hover:bg-slate-800 font-bold text-sm transition shadow-sm';
+          btn.innerHTML = `<span class="inline-block w-6 h-6 rounded-full bg-slate-200 dark:bg-slate-700 text-center text-xs leading-6 mr-2 font-bold">${String.fromCharCode(65 + idx)}</span> ${choice}`;
+          btn.onclick = () => resolveQuiz(idx === q.answer, idx);
+          box.appendChild(btn);
+        });
+      } else if (state.quizMode === 'input') {
+        box.innerHTML = `<div class="flex gap-2"><input id="quizInput" type="text" placeholder="答えを入力" class="flex-1 p-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-900 font-bold text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"><button id="quizInputBtn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-5 rounded-xl">答える</button></div>`;
+        const inp = document.getElementById('quizInput');
+        const go = () => { if (inp.value.trim() && !state.answered) { inp.disabled = true; resolveQuiz(judgeText(inp.value, q) === 1); } };
+        document.getElementById('quizInputBtn').onclick = go;
+        inp.onkeydown = e => { if (e.key === 'Enter' && !e.isComposing) go(); };
+        inp.focus();
+      } else {
+        box.innerHTML = `<canvas class="w-full bg-white border-2 border-dashed border-slate-300 rounded-xl" style="touch-action:none;height:180px"></canvas>
+          <div class="flex justify-between items-center"><button id="qClr" class="text-xs font-bold text-slate-500 hover:text-rose-500">消す</button><button id="qCheck" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-5 py-2 rounded-xl text-sm">答え合わせ</button></div>
+          <div id="qSelf"></div>`;
+        const cv = box.querySelector('canvas'), tmp = { ink: '' };
+        setupInk(cv, tmp);
+        document.getElementById('qClr').onclick = () => { clearInk(cv); tmp.ink = ''; document.getElementById('qSelf').innerHTML = ''; };
+        document.getElementById('qCheck').onclick = () => {
+          const self = document.getElementById('qSelf');
+          const [cor, wr] = writeCands(q), res = HW.judge(cv, cor, wr);
+          if (res.blank) { self.innerHTML = '<div class="mt-3 text-sm font-bold text-amber-600">まだ何も書かれていません。答えを書いてから押してください。</div>'; return; }
+          document.getElementById('qCheck').classList.add('hidden');
+          self.innerHTML = `<div class="mt-3 p-3 rounded-xl border ${res.pass ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-300' : 'bg-rose-50 dark:bg-rose-900/20 border-rose-300'} text-sm">
+            <div class="font-bold mb-1">${res.pass ? '⭕ 正解と判定しました' : '❌ 不正解と判定しました'}</div>
+            <div class="text-xs mb-2">正解：${answerText(q)}</div>
+            <div class="flex flex-wrap gap-2 items-center"><button id="qOk" class="px-4 py-2 rounded-lg bg-indigo-600 text-white font-bold text-xs">この判定で進む</button><button id="qFlip" class="px-4 py-2 rounded-lg bg-slate-200 dark:bg-slate-700 font-bold text-xs">判定を直す（${res.pass ? '❌' : '⭕'}にする）</button></div></div>`;
+          document.getElementById('qOk').onclick = () => resolveQuiz(res.pass);
+          document.getElementById('qFlip').onclick = () => resolveQuiz(!res.pass);
+        };
+      }
+    }
+
+    function addWrong(q) {
+      state.wrong[q.id] = state.wrong[q.id] || { count: 0 };
+      state.wrong[q.id].count++;
+      saveStore(); renderReview();
+    }
+    function fixWrong(q, ok) {
+      if (ok) delete state.wrong[q.id]; else if (!state.wrong[q.id]) state.wrong[q.id] = { count: 1 };
+      saveStore(); renderReview();
+    }
+
+    // 間違えたら、少し後に「同じ単元の類題」→「同じ問題」を出す
+    function scheduleRetry(q) {
+      const queue = state.currentQuiz, at = state.currentIndex;
+      const used = new Set(queue.map(x => x.id));
+      const others = QUESTIONS_DB.filter(x => x.unit === q.unit && x.id !== q.id);
+      const sim = shuffle(others.filter(x => !used.has(x.id)))[0] || shuffle(others)[0];
+      let note;
+      if (sim) {
+        queue.splice(Math.min(at + 4, queue.length), 0, { ...sim, retry: true });
+        queue.splice(Math.min(at + 8, queue.length), 0, { ...q, retry: true });
+        note = '🔁 少し後に、同じ単元の類題と、この問題がもう一度出ます。';
+      } else {
+        queue.splice(Math.min(at + 4, queue.length), 0, { ...q, retry: true });
+        note = '🔁 少し後に、この問題がもう一度出ます。';
+      }
+      return note;
+    }
+
+    function resolveQuiz(ok, selected) {
+      if (state.answered) return;
+      state.answered = true;
+      const q = state.currentQuiz[state.currentIndex];
+      state.totalAnswered++;
+      if (state.quizMode === 'choice') {
+        const buttons = document.getElementById('quizOptionsContainer').getElementsByTagName('button');
+        for (let i = 0; i < buttons.length; i++) {
+          buttons[i].disabled = true;
+          if (i === q.answer) buttons[i].classList.add('bg-emerald-100', 'border-emerald-500', 'dark:bg-emerald-900/40');
+          else if (i === selected) buttons[i].classList.add('bg-rose-100', 'border-rose-500', 'dark:bg-rose-900/40');
+        }
+      }
+      let note = '';
+      if (ok) {
+        state.score++; state.totalCorrect++; state.streak++; state.xp += 10;
+        if (state.reviewMode && state.wrong[q.id]) { fixWrong(q, true); note = '🎉 苦手BOXから外れました！'; }
+      } else {
+        state.streak = 0;
+        addWrong(q);
+        note = state.reviewMode ? '苦手BOXに残ります。' : scheduleRetry(q);
+        document.getElementById('totalQNum').textContent = state.currentQuiz.length;
+      }
+      document.getElementById('headerStreak').textContent = state.streak;
+      document.getElementById('headerXp').textContent = state.xp;
+      document.getElementById('explanationText').textContent = `${ok ? '⭕ 正解！' : '❌ 残念…'} 正解：${answerText(q)}。${q.explanation} ${note}`;
+      document.getElementById('explanationBox').classList.remove('hidden');
+      document.getElementById('nextQuestionBtn').classList.remove('hidden');
+    }
+
+    function nextQuestion() {
+      state.currentIndex++;
+      if (state.currentIndex < state.currentQuiz.length) { renderQuestion(); return; }
+      alert(`テスト終了！正解数: ${state.score} / ${state.currentQuiz.length}`);
+      startQuizSession(state.reviewMode && Object.keys(state.wrong).length > 0);
+    }
+
+    // ===== 苦手克服BOX =====
+    function renderReview() {
+      const ids = Object.keys(state.wrong).map(Number).filter(id => QUESTIONS_DB.some(q => q.id === id));
+      const badge = document.getElementById('reviewCount');
+      badge.textContent = ids.length; badge.classList.toggle('hidden', ids.length === 0);
+      const box = document.getElementById('wrongLogContainer');
+      if (!box) return;
+      if (!ids.length) { box.innerHTML = '<div class="text-center py-8 text-slate-400 text-sm">現在、間違えた問題はありません。素晴らしい調子です！</div>'; return; }
+      box.innerHTML = `<button onclick="startReviewFromBox()" class="bg-rose-500 hover:bg-rose-600 text-white font-extrabold px-5 py-2 rounded-xl shadow text-sm mb-2"><span class="mr-1" aria-hidden="true">⚡</span>苦手 ${ids.length} 問だけで演習する</button>`;
+      ids.sort((x, y) => state.wrong[y].count - state.wrong[x].count).forEach(id => {
+        const q = QUESTIONS_DB.find(x => x.id === id);
+        const d = document.createElement('div');
+        d.className = 'p-4 rounded-xl border border-rose-200 dark:border-rose-900 bg-rose-50 dark:bg-rose-900/10';
+        d.innerHTML = `<div class="flex justify-between text-xs font-bold text-slate-500 mb-1"><span>${q.subject}・${q.unit}</span><span>間違えた回数 ${state.wrong[id].count}</span></div>
+          <div class="font-bold text-sm mb-1">${q.question}</div>
+          <div class="text-xs font-bold text-emerald-700 dark:text-emerald-400">正解：${answerText(q)}</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">${q.explanation}</div>
+          <button class="text-xs text-slate-400 hover:text-rose-500 mt-2">BOXから外す</button>`;
+        d.querySelector('button').onclick = () => fixWrong(q, true);
+        box.appendChild(d);
+      });
+    }
+    function startReviewFromBox() { switchTab('quiz'); startQuizSession(true); }
+
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+      const isDark = document.documentElement.classList.contains('dark');
+      document.getElementById('themeIcon').textContent = isDark ? '☀️' : '🌙';
+    }
+
+    function updateStatsDisplay() {
+      document.getElementById('statTotalAnswered').textContent = state.totalAnswered;
+      const acc = state.totalAnswered > 0 ? Math.round((state.totalCorrect / state.totalAnswered) * 100) : 0;
+      document.getElementById('statAccuracy').textContent = acc + '%';
+      document.getElementById('statStreak').textContent = state.streak;
+      document.getElementById('statXp').textContent = state.xp;
+    }
+
+    function toggleScratchpad() {
+      const modal = document.getElementById('scratchpadModal');
+      modal.classList.toggle('hidden');
+      if(!modal.classList.contains('hidden')) {
+        initCanvas();
+      }
+    }
+
+    function initCanvas() {
+      const canvas = document.getElementById('memoCanvas');
+      const dpr = window.devicePixelRatio || 1, cssW = canvas.parentElement.clientWidth - 40, cssH = 250;
+      canvas.style.width = cssW + 'px'; canvas.style.height = cssH + 'px'; canvas.style.touchAction = 'none';
+      canvas.width = cssW * dpr; canvas.height = cssH * dpr;
+      const ctx = canvas.getContext('2d');
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.strokeStyle = document.documentElement.classList.contains('dark') ? '#ffffff' : '#1e293b';
+      ctx.lineWidth = 3; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      let drawing = false;
+      const pos = e => { const r = canvas.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+      canvas.onpointerdown = e => { e.preventDefault(); drawing = true; canvas.setPointerCapture(e.pointerId); const [x, y] = pos(e); ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + 0.01, y); ctx.stroke(); };
+      canvas.onpointermove = e => { if (!drawing) return; e.preventDefault(); const [x, y] = pos(e); ctx.lineTo(x, y); ctx.stroke(); };
+      canvas.onpointerup = canvas.onpointercancel = () => { drawing = false; };
+    }
+
+    function clearMemoCanvas() {
+      const canvas = document.getElementById('memoCanvas');
+      clearInk(canvas);
+    }
+
+    const CARDS = [];
+    const R = (cat, f, b) => CARDS.push(['理科', cat, f, b]);
+    const S = (cat, f, b) => CARDS.push(['社会', cat, f, b]);
+    R('法則・公式','オームの法則（式）','V＝I×R（電圧＝電流×抵抗）／電流は電圧に比例し、抵抗に反比例');
+    R('法則・公式','抵抗R(Ω)を求める式','R＝V÷I');
+    R('法則・公式','電流I(A)を求める式','I＝V÷R');
+    R('法則・公式','電力P(W)の式','P＝V×I（電圧×電流）');
+    R('法則・公式','電力量・熱量(J)の式','電力(W)×時間(秒)');
+    R('法則・公式','1kWhは何J？','3,600,000J');
+    R('回路','直列回路の電流','どこでも同じ（I＝I1＝I2）');
+    R('回路','直列回路の電圧','各部分の電圧の和（V＝V1＋V2）');
+    R('回路','直列回路の全体の抵抗','R＝R1＋R2');
+    R('回路','並列回路の電圧','どこでも同じ（電源と同じ）');
+    R('回路','並列回路の電流','枝分かれした電流の和（I＝I1＋I2）');
+    R('回路','並列回路の全体の抵抗','各抵抗より小さくなる（1/R＝1/R1＋1/R2）');
+    R('用語','電流・電圧・抵抗・電力の単位','A（アンペア）・V（ボルト）・Ω（オーム）・W（ワット）');
+    R('用語','電流計・電圧計のつなぎ方','電流計は直列、電圧計は並列');
+    R('法則・公式','静電気の力のきまり','同じ種類の電気はしりぞけ合い、違う種類は引き合う');
+    R('用語','静電気の正体','電子の移動（電子は－の電気をもつ）');
+    R('用語','電流の向きと電子の向き','電流は＋→－、電子は－→＋で逆向き');
+    R('法則・公式','右ねじの法則','電流の向きに右ねじを進めると、磁界は右ねじを回す向きにできる');
+    R('用語','磁界の向きとは？','方位磁針のN極が指す向き（磁力線はN極→S極）');
+    R('法則・公式','フレミングの左手の法則','磁界中の電流が受ける力の向き。親指＝力、人差し指＝磁界、中指＝電流');
+    R('法則・公式','電流が磁界から受ける力を大きくするには','電流を大きくする／磁界を強くする');
+    R('用語','電磁誘導とは？','コイルの中の磁界が変化すると、コイルに電流が流れる現象');
+    R('法則・公式','誘導電流を大きくする方法','磁石を速く動かす／強い磁石／コイルの巻数を増やす');
+    R('法則・公式','レンツの法則','誘導電流は、磁界の変化をさまたげる向きに流れる');
+    R('用語','直流と交流のちがい','直流＝向きが一定、交流＝向きが周期的に変わる（周波数Hz）');
+    R('法則・公式','慣性の法則','力がはたらかない（つり合っている）とき、物体は静止か等速直線運動を続ける');
+    R('法則・公式','作用・反作用の法則','2物体間で、力は同じ大きさ・逆向きで同時にはたらく');
+    R('法則・公式','フックの法則','ばねの伸びは、加えた力の大きさに比例する');
+    R('法則・公式','密度(g/cm³)の式','密度＝質量(g)÷体積(cm³)');
+    R('法則・公式','圧力(Pa)の式','圧力＝力(N)÷力がはたらく面積(m²)');
+    R('法則・公式','質量保存の法則','化学変化の前後で、物質全体の質量は変わらない');
+    R('法則・公式','光の反射の法則','入射角＝反射角');
+    R('法則・公式','仕事(J)の式','仕事＝力(N)×力の向きに動かした距離(m)');
+    [['関ヶ原の戦い','1600年（徳川家康が勝利）'],['江戸幕府が開かれる','1603年（徳川家康が征夷大将軍に）'],['大坂の陣で豊臣氏が滅亡','1615年'],['最初の武家諸法度が出される','1615年'],['参勤交代が制度化される','1635年（徳川家光）'],['島原・天草一揆','1637年'],['ポルトガル船の来航禁止（鎖国の完成）','1639年'],['オランダ商館を出島へ移す','1641年'],['享保の改革が始まる','1716年（徳川吉宗）'],['寛政の改革が始まる','1787年（松平定信）'],['天保の改革が始まる','1841年（水野忠邦）']].forEach(([f, b]) => S('江戸時代・年号', f + 'は何年？', b));
+    [['ピューリタン革命','1642年（イギリス）'],['名誉革命','1688年（イギリス）'],['権利章典','1689年'],['アメリカ独立宣言','1776年'],['フランス革命（人権宣言）','1789年'],['ナポレオンが皇帝に即位','1804年'],['アヘン戦争','1840年（清とイギリス）'],['南北戦争が始まる','1861年（アメリカ）'],['奴隷解放宣言','1863年（リンカン）']].forEach(([f, b]) => S('欧米・年号', f + 'は何年？', b));
+    [['ペリーが浦賀に来航','1853年'],['日米和親条約','1854年（下田・函館を開港）'],['日米修好通商条約・安政の大獄','1858年（井伊直弼）'],['桜田門外の変','1860年'],['薩長同盟','1866年'],['大政奉還・王政復古の大号令','1867年'],['五箇条の御誓文','1868年']].forEach(([f, b]) => S('開国・幕末・年号', f + 'は何年？', b));
+    S('用語','株仲間とは？','幕府や藩が認めた商工業者の同業組合。運上・冥加を納めて独占権を得た');
+    S('用語','参勤交代とは？','大名が1年おきに江戸と領地を往復する制度。費用負担で藩の力を弱めた');
+    S('用語','鎖国とは？','幕府が外国との交流を制限したこと。長崎でオランダ・中国とのみ貿易');
+    S('用語','領事裁判権とは？','外国人の犯罪を、その国の領事が自国の法で裁く権利（日本に不利）');
+    S('用語','関税自主権とは？','輸入品の関税を国が自分で決める権利（日米修好通商条約で日本にはなかった）');
+
+    let cardState = { subject: 'all', list: null, idx: 0 };
+    function setCardSubject(v) { cardState.subject = v; markChips('cards-subj', v, 'subj'); rebuildCards(); }
+    function rebuildCards() {
+      const unk = document.getElementById('cardUnknownOnly').checked;
+      cardState.list = CARDS.filter(c => (cardState.subject === 'all' || c[0] === cardState.subject) && !(unk && state.known[c[2]]));
+      cardState.idx = 0; renderCard();
+    }
+    function shuffleCards() { cardState.list = shuffle(cardState.list || CARDS); cardState.idx = 0; renderCard(); }
+    function renderCard() {
+      if (!cardState.list) return rebuildCards();
+      const l = cardState.list, c = l[cardState.idx];
+      const pool = CARDS.filter(x => cardState.subject === 'all' || x[0] === cardState.subject);
+      const known = pool.filter(x => state.known[x[2]]).length;
+      document.getElementById('cardBackText').classList.add('hidden');
+      document.getElementById('cardCounter').textContent = `${l.length ? cardState.idx + 1 : 0} / ${l.length}　（覚えた ${known} / ${pool.length}）`;
+      document.getElementById('cardSubjectBadge').textContent = c ? `${c[0]}・${c[1]}${state.known[c[2]] ? '　✅覚えた' : ''}` : '';
+      document.getElementById('cardFrontText').textContent = c ? c[2] : '🎉 すべて覚えました！';
+      document.getElementById('cardBackText').textContent = c ? c[3] : '';
+    }
+    function moveCard(d) { const n = cardState.list.length; if (n) { cardState.idx = (cardState.idx + d + n) % n; renderCard(); } }
+    function markCard(k) {
+      const l = cardState.list; if (!l.length) return;
+      const c = l[cardState.idx];
+      if (k) state.known[c[2]] = true; else delete state.known[c[2]];
+      saveStore();
+      if (k && document.getElementById('cardUnknownOnly').checked) { l.splice(cardState.idx, 1); if (cardState.idx >= l.length) cardState.idx = 0; renderCard(); }
+      else moveCard(1);
+    }
+    function flipCard() { document.getElementById('cardBackText').classList.toggle('hidden'); }
+
+    // Initialize quiz on load
+    document.addEventListener('keydown', e => {
+      if (state.activeTab !== 'quiz' || e.isComposing || /INPUT|TEXTAREA/.test((document.activeElement || {}).tagName || '')) return;
+      const next = document.getElementById('nextQuestionBtn');
+      if ((e.key === 'Enter' || e.key === ' ') && !next.classList.contains('hidden')) { e.preventDefault(); nextQuestion(); return; }
+      const k = '1234abcd'.indexOf(e.key.toLowerCase());
+      if (k >= 0 && state.quizMode === 'choice' && !state.answered) { const b = document.getElementById('quizOptionsContainer').children[k % 4]; if (b) b.click(); }
+    });
+    window.onload = function() {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) toggleDarkMode();
+      updateQuizBadges();
+      loadStore(); renderReview(); setCardSubject('all'); setExamSubject('all'); setExamMode('choice');
+      startQuizSession();
+    };
+  </script>
+</body>
+</html>
